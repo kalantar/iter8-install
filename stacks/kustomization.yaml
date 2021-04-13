@@ -11,5 +11,14 @@
 # in these three files.
 ###########
 
+namePrefix: iter8-
+
+namespace: iter8-system
+
+commonLabels:
+  creator: iter8
+
 resources:
 - iter8-knative
+- iter8-istio
+- serviceaccounts.yaml
