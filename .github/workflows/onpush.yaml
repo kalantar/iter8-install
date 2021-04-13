@@ -20,6 +20,7 @@ jobs:
     - name: update build.yaml files
       run: |
           kustomize build core > core/build.yaml
+          kustomize build stacks > stacks/build.yaml
           kustomize build metrics > metrics/build.yaml
           kustomize build prometheus-add-on/prometheus > prometheus-add-on/prometheus/build.yaml
           kustomize build prometheus-add-on/prometheus-operator > prometheus-add-on/prometheus-operator/build.yaml

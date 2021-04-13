@@ -16,6 +16,9 @@ jobs:
       run: |
           echo "Installing core"
           kustomize build core | kubectl apply -f -
+          
+          echo "Installing stacks"
+          kustomize build stacks | kubectl apply -f -
 
           echo "Installing metrics"
           kubectl wait crd -l creator=iter8 --for condition=established --timeout=120s
