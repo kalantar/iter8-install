@@ -6,7 +6,7 @@ resources:
 images:
 - name: iter8/etc3:latest
   # to change etc3 version, edit the next line
-  newTag: 0.1.21
+  newTag: 0.1.24
 
 # even if you do not change the CRD, 
 # keep the two version numbers in sync to keep them the same
